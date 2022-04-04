@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" xmlns:th="http://www.thymeleeaf.org">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="\estilos\style.css">
+</head>
+<body>
+    
+    
+    <div class="TituloPagina">Libreria Local</div>
+
+    <div class="grid-container">
+        <a th:href="@{/libro/registro}">
+            <div class="grid-item">
+            <div class="image">
+                <img class="image__img" src="\images\3.png" alt="">
+                <div class="image__overlay">
+                    <div class="image__title">Cargar Libro</div>
+                </div>
+            </div>
+        </div>
+        </a>
+        
+        
+        <a th:href="@{/autor/registro}">
+            <div class="grid-item">
+            <div class="image">
+                <img class="image__img" src="\images\2.png" alt="">
+                <div class="image__overlay">
+                    <div class="image__title">Cargar Autor</div>
+                </div>
+            </div>
+        </div>
+        </a>
+        
+        <a th:href="@{/editorial/registro}">
+            <div class="grid-item">
+            <div class="image">
+                <img class="image__img" src="\images\1.png" alt="">
+                <div class="image__overlay">
+                    <div class="image__title">Cargar Editorial</div>
+                </div>
+            </div>
+        </div>
+        </a>
+        
+        <a th:href="@{/libro/lista}">
+            <div class="grid-item">
+            <div class="image">
+                <img class="image__img" src="\images\3.png" alt="">
+                <div class="image__overlay">
+                    <div class="image__title">Listar Libros</div>
+                </div>
+            </div>
+        </div>
+        </a>
+        
+        <a th:href="@{/autor/lista}">
+            <div class="grid-item">
+            <div class="image">
+                <img class="image__img" src="\images\2.png" alt="">
+                <div class="image__overlay">
+                    <div class="image__title">Listar Autores</div>
+                </div>
+            </div>
+        </div>
+        </a>
+        
+        <a th:href="@{/editorial/lista}">
+            <div class="grid-item">
+            <div class="image">
+                <img class="image__img" src="\images\1.png" alt="">
+                <div class="image__overlay">
+                    <div class="image__title">Listar Editoriales</div>
+                </div>
+            </div>
+        </div>
+        </a>
+        
+    </div>
+    
+
+
+</body>
+</html>
