@@ -9,35 +9,8 @@
     <link rel="stylesheet" href="\estilos\lista-libro.css">
 </head>
 <body>
-    <h1 style="margin-left: 30px;">Aca se muestran los libros</h1>
-    <!--
-
-      <div style="margin-left: 30px;">
-        
-          <div th:each="libro : ${libros}" id="space">
-            <div id="col1" >
-              <div class="tituloContent">
-                <p th:text="${libro.titulo}" id="titulo">Titulo</p>
-                <div id="subtitulo">
-                  <div th:text="${libro.autor.nombre}">Autor</div>
-                  <div>&nbsp-&nbsp</div>
-                  <div th:text="${libro.anio}">Año</div>
-                </div>
-              </div>
-            </div>
-            <div id="col2">
-              <div th:if="${libro.alta}" id="circle" style="background-color: rgb(68, 163, 68);">&nbsp;</div>
-              <div th:unless="${libro.alta}" id="circle" style="background-color: crimson;">&nbsp;</div>  
-            </div>
-            <div id="col3">
-              <a th:href="@{/libro/modificar/__${libro.id}__}" class="btn btn-dark">Modificar</a>
-              <a th:href="@{/libro/alta/__${libro.id}__}" class="btn btn-dark">Alta</a>
-              <a th:href="@{/libro/baja/__${libro.id}__}" class="btn btn-dark">Baja</a>
-            </div>
-          </div>
-          <a th:href="@{/}" class="btn btn-dark" style="margin-top: 15px">Volver</a>
-        </div>
-      -->
+    <h1 style="margin-left: 30px;">Navbar</h1>
+    
         
 
           <div class="grid-container">
@@ -57,46 +30,14 @@
                 <a th:href="@{/libro/modificar/__${libro.id}__}" class="btn btn-dark">Editar</a>
                 <a th:href="@{/libro/alta/__${libro.id}__}" class="btn btn-secondary">Alta</a>
                 <a th:href="@{/libro/baja/__${libro.id}__}" class="btn btn-secondary">Baja</a>
-                <div id="col2">
+                <div id="col2" class="d-flex align-items-center">
                   <div th:if="${libro.alta}" id="circle" style="background-color: rgb(68, 163, 68);">&nbsp;</div>
                   <div th:unless="${libro.alta}" id="circle" style="background-color: crimson;">&nbsp;</div>  
                 </div>
               </div>
             </div>
 
-<!--            <div class="card">
-              <div class="card-img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7wLDsPG1RgVstDFdkcpl1DfiVu2ef6fxTtA&usqp=CAU" alt=""></div>
-              <div class="card-info">
-                <table>
-                  <tr><td colspan="2">Titulo</td></tr>
-                  <tr><td>Autor</td>
-                  <td>Año</td></tr>
-                  <tr><td colspan="2">Editorial</td></tr>
-                </table>
-              </div>
-              <div class="card-actions">
-                <a th:href="@{/libro/modificar/__${libro.id}__}" class="btn btn-dark">Editar</a>
-                <a th:href="@{/libro/alta/__${libro.id}__}" class="btn btn-secondary">Alta</a>
-                <a th:href="@{/libro/baja/__${libro.id}__}" class="btn btn-secondary">Baja</a>
-                <div id="col2">
-                  <div th:if="${libro.alta}" id="circle" style="background-color: rgb(68, 163, 68);">&nbsp;</div>
-                  <div th:unless="${libro.alta}" id="circle" style="background-color: crimson;">&nbsp;</div>  
-                </div>
-              </div>
-            </div>
 
-            <div class="card">
-              <div class="card-img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7wLDsPG1RgVstDFdkcpl1DfiVu2ef6fxTtA&usqp=CAU" alt=""></div>
-              <div class="card-info">
-                <table>
-                  <tr><td colspan="2">Titulo</td></tr>
-                  <tr><td>Autor</td>
-                  <td>Año</td></tr>
-                  <tr><td colspan="2">Editorial</td></tr>
-                </table>
-              </div>
-            </div>
--->
 
             
           </div>

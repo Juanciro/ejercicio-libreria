@@ -2,6 +2,7 @@ package com.biblio.bibliotecalocal.Repositorios;
 
 import com.biblio.bibliotecalocal.Entidades.Libro;
 import java.util.List;
+import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
@@ -19,6 +20,9 @@ public interface LibroRepositorio extends JpaRepository<Libro, String>{
 //    TODAVIA NO SABEMOS SI FUNCIIONA
 //    @Query("SELECT l FROM Libro l WHERE l.autor.nombre = :nombre")
 //    public List<Libro> buscarPorNombreAutor(@Param("nombre") String nombre);
+
+    @Query("SELECT l FROM Libro l WHERE l.isbn = :isbn")
+    public Libro buscarPorISBN(@Param("isbn") Long bn);
     
 }
 

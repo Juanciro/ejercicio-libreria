@@ -45,6 +45,16 @@ public class LibroServicio {
     }
     
     @Transactional(readOnly = true)
+    public Libro buscarPorISBN(Long isbn) throws Exception{
+        
+        if(isbn != null && isbn>0){
+            return lr.buscarPorISBN(isbn);
+        }else{
+            throw new Exception("No se encontro el año en la bdd");
+        }
+    }
+    
+    @Transactional(readOnly = true)
     public Libro buscarPorId(String id){
         
         return lr.getById(id);

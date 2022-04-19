@@ -13,7 +13,7 @@ body{
 
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto auto;
     margin: 5%;
     
 }
@@ -29,7 +29,7 @@ body{
 
 .image {
     position: relative;
-    width: 500px;
+    width: 300px;
 }
 
 .image__img {
